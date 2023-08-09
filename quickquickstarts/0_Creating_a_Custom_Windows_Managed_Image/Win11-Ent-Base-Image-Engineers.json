@@ -5,7 +5,9 @@
     "dependsOn": [],
     "tags": {
         "imagebuilderTemplate": "Windows11Enterprise",
-        "userIdentity": "enabled"
+        "userIdentity": "enabled",
+        "Division": "IT",
+        "Environment": "Engineer-Workstation", 
             },
         "identity": {
             "type": "UserAssigned",
