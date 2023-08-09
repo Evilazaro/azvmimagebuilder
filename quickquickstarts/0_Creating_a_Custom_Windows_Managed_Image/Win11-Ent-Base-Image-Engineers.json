@@ -31,7 +31,9 @@
         "customize": [
             {
                 "type": "PowerShell",
-                "inline": "wsl --install",
+                "inline": [
+                    "wsl --install"
+                ],
                 "name": "InstallWSL"
             },
             {
@@ -46,7 +48,7 @@
             {
                 "type": "PowerShell",
                 "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1",
-                "name": "InstallChocollatey"
+                "name": "InstallChocolatey"
             },
             {
                 "type": "PowerShell",
