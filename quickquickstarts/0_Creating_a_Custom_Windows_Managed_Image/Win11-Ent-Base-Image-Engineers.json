@@ -34,6 +34,13 @@
                 "version": "latest"
             
         },
+        "customize": [
+            {
+                "type": "PowerShell",
+                "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1",
+                "name": "InstallChocollatey"
+            }
+        ],
         "distribute": 
             [
                 {   "type":"ManagedImage",
