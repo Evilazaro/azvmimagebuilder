@@ -23,8 +23,8 @@
         },
         "source": {
             "type": "PlatformImage",
-            "publisher": "microsoftwindowsdesktop",
-            "offer": "windows-11",
+            "publisher": "Contoso",
+            "offer": "Win11EntBaseImageEngineers",
             "sku": "win11-22h2-ent",
             "version": "latest"
         },
@@ -49,7 +49,7 @@
                 "type": "ManagedImage",
                 "imageId": "/subscriptions/9e946e16-45cd-4e6a-ad69-bb7c5e24c230/resourceGroups/Contoso-ImageBuilder-Base-Images-rg/providers/Microsoft.Compute/images/Win11EntBaseImageEngineers",
                 "location": "EASTUS2",
-                "runOutputName": "Win11EntBaseImageEngineers",
+                "runOutputName": "runOutputManagedImage",
                 "artifactTags": {
                     "source": "azVmImageBuilder",
                     "baseosimg": "Windows11-Enterprise"
