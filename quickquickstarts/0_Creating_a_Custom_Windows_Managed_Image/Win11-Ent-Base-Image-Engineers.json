@@ -50,22 +50,30 @@
             },
             {
                 "type": "PowerShell",
-                "inline": ["choco install git"],
+                "inline": [
+                    "choco install git"
+                ],
                 "name": "InstallGit"
             },
             {
                 "type": "PowerShell",
-                "inline": ["choco install docker-desktop"],
+                "inline": [
+                    "choco install docker-desktop"
+                ],
                 "name": "InstallDocker"
             },
             {
                 "type": "PowerShell",
-                "inline": ["choco install vscode"],
+                "inline": [
+                    "choco install vscode"
+                ],
                 "name": "InstallVSCode"
             },
             {
                 "type": "PowerShell",
-                "inline": ["git clone https://github.com/Evilazaro/eShopOnContainers.git c:\\"],
+                "inline": [
+                    "git clone https://github.com/Evilazaro/eShopOnContainers.git c:\\eShopOnContainers"
+                ],
                 "name": "CloneRepo"
             }
         ],
