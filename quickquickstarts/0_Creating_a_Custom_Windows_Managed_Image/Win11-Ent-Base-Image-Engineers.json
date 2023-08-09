@@ -12,7 +12,7 @@
     "identity": {
         "type": "UserAssigned",
         "userAssignedIdentities": {
-            "/subscriptions/9e946e16-45cd-4e6a-ad69-bb7c5e24c230/resourcegroups/Contoso-ImageBuilder-Base-Images-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aibBuiUserId1691615185": {}
+            "<imgBuilderId>": {}
         }
     },
     "properties": {
