@@ -31,10 +31,10 @@
         "customize": [
             {
                 "type": "PowerShell",
+                "name": "InstallWSL",
                 "inline": [
                     "wsl --install"
-                ],
-                "name": "InstallWSL"
+                ]
             },
             {
                 "type": "WindowsUpdate",
@@ -47,36 +47,36 @@
             },
             {
                 "type": "PowerShell",
-                "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1",
-                "name": "InstallChocolatey"
+                "name": "InstallChocolatey",
+                "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1"
             },
             {
                 "type": "PowerShell",
+                "name": "InstallGit",
                 "inline": [
                     "choco install git"
-                ],
-                "name": "InstallGit"
+                ]
             },
             {
                 "type": "PowerShell",
+                "name": "InstallDocker",
                 "inline": [
                     "choco install docker-desktop"
-                ],
-                "name": "InstallDocker"
+                ]
             },
             {
                 "type": "PowerShell",
+                "name": "InstallVSCode",
                 "inline": [
                     "choco install vscode"
-                ],
-                "name": "InstallVSCode"
+                ]
             },
             {
                 "type": "PowerShell",
+                "name": "CloneRepo",
                 "inline": [
                     "git clone https://github.com/Evilazaro/eShopOnContainers.git c:\\eShopOnContainers"
-                ],
-                "name": "CloneRepo"
+                ]
             }
         ],
         "distribute": [
