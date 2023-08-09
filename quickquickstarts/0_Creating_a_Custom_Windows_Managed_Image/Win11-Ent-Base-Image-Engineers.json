@@ -1,7 +1,7 @@
 {
     "type": "Microsoft.VirtualMachineImages/imageTemplates",
     "apiVersion": "2022-02-14",
-    "location": "<region>",
+    "location": "EASTUS2",
     "dependsOn": [],
     "tags": {
         "imagebuilderTemplate": "Windows11Enterprise",
@@ -12,7 +12,7 @@
     "identity": {
         "type": "UserAssigned",
         "userAssignedIdentities": {
-            "<imgBuilderId>": {}
+            "/subscriptions/9e946e16-45cd-4e6a-ad69-bb7c5e24c230/resourcegroups/Contoso-ImageBuilder-Base-Images-Engineers-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/contosoIdentityIBuilderUser": {}
         }
     },
     "properties": {
@@ -29,6 +29,10 @@
             "version": "latest"
         },
         "customize": [
+            {
+                "type": "PowerShell",
+                "commandToExecute": "wsl --install"
+            },
             {
                 "type": "WindowsUpdate",
                 "searchCriteria": "IsInstalled=0",
@@ -47,9 +51,9 @@
         "distribute": [
             {
                 "type": "ManagedImage",
-                "imageId": "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.Compute/images/<imageName>",
-                "location": "<region>",
-                "runOutputName": "<runOutputName>",
+                "imageId": "/subscriptions/9e946e16-45cd-4e6a-ad69-bb7c5e24c230/resourceGroups/Contoso-ImageBuilder-Base-Images-Engineers-rg/providers/Microsoft.Compute/images/Win11EntBaseImageEngineers",
+                "location": "EASTUS2",
+                "runOutputName": "runOutputManagedImage",
                 "artifactTags": {
                     "source": "azVmImageBuilder",
                     "baseosimg": "Windows11-Enterprise"
