@@ -46,6 +46,26 @@
                 "type": "PowerShell",
                 "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1",
                 "name": "InstallChocollatey"
+            },
+            {
+                "type": "PowerShell",
+                "commandToExecute": "choco install git",
+                "name": "InstallGit"
+            },
+            {
+                "type": "PowerShell",
+                "commandToExecute": "choco install docker-desktop",
+                "name": "InstallDocker"
+            },
+            {
+                "type": "PowerShell",
+                "commandToExecute": "choco install vscode",
+                "name": "InstallVSCode"
+            },
+            {
+                "type": "PowerShell",
+                "commandToExecute": "git clone https://github.com/Evilazaro/eShopOnContainers.git c:\\",
+                "name": "CloneRepo"
             }
         ],
         "distribute": [
