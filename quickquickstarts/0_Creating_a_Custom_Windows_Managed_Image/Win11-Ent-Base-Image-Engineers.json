@@ -30,13 +30,9 @@
         },
         "customize": [
             {
-                "type": "WindowsUpdate",
-                "searchCriteria": "IsInstalled=0",
-                "filters": [
-                    "exclude:$_.Title -like '*Preview*'",
-                    "include:$true"
-                ],
-                "updateLimit": 40
+                "type": "PowerShell",
+                "name": "InstallChocolatey",
+                "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1"
             }
         ],
         "distribute": [
