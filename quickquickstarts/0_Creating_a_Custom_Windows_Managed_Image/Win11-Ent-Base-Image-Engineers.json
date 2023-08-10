@@ -37,7 +37,7 @@
                     "include:$true"
                 ],
                 "updateLimit": 40
-            },
+            }
         ],
         "distribute": [
             {
