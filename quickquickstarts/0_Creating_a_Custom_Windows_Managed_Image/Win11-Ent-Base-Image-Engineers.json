@@ -31,6 +31,24 @@
         "customize": [
             {
                 "type": "PowerShell",
+                "name": "InstallWSL",
+                "runAsSystem": false,
+                "runElevated": true,
+                "inline": [
+                    "wsl --install"
+                ]
+            },
+            {
+                "type": "WindowsUpdate",
+                "searchCriteria": "IsInstalled=0",
+                "filters": [
+                    "exclude:$_.Title -like '*Preview*'",
+                    "include:$true"
+                ],
+                "updateLimit": 40
+            },
+            {
+                "type": "PowerShell",
                 "name": "InstallChocolatey",
                 "scriptUri": "https://raw.githubusercontent.com/Evilazaro/DigitalAppInnovation-Demos/main/DevOps/Continuous-Operations/DevBox/VMImageCustomization/InstallChocolatey.ps1"
             },
@@ -39,6 +57,33 @@
                 "name": "InstallGit",
                 "inline": [
                     "choco install git"
+                ]
+            },
+            {
+                "type": "PowerShell",
+                "name": "InstallDocker",
+                "runAsSystem": false,
+                "runElevated": true,
+                "inline": [
+                    "choco install docker-desktop"
+                ]
+            },
+            {
+                "type": "PowerShell",
+                "name": "InstallVSCode",
+                "runAsSystem": false,
+                "runElevated": true,
+                "inline": [
+                    "choco install vscode"
+                ]
+            },
+            {
+                "type": "PowerShell",
+                "name": "CloneRepo",
+                "runAsSystem": false,
+                "runElevated": true,
+                "inline": [
+                    "git clone https://github.com/Evilazaro/eShopOnContainers.git c:\\eShopOnContainers"
                 ]
             }
         ],
